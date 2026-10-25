@@ -1,0 +1,22 @@
+EMPIRE GESTION — ÉTAT DU PROJET ET PROCHAINE ÉTAPE
+
+CE DOSSIER N'EST PAS ENCORE DÉPLOYÉ.
+Il regroupe le prototype et une base de serveur à configurer. Il ne faut pas le présenter comme une application connectée tant que les tests ne sont pas réussis.
+
+FICHIERS
+- index.html : prototype de gestion existant. Les données restent dans le navigateur (localStorage).
+- worker.js : API de départ. Elle nécessite le binding D1 nommé DB.
+- schema_initial.sql : schéma initial de référence. NE PAS l'exécuter sur la base distante existante sans comparer les tables.
+- wrangler.toml : configuration à compléter.
+
+BLOCAGES RESTANTS
+1. Remplacer DATABASE_ID_A_REMPLACER par l'identifiant réel de la base D1 dans wrangler.toml.
+2. Vérifier que les requêtes du Worker correspondent exactement au schéma de la base D1 existante.
+3. Adapter index.html pour utiliser les routes API au lieu de localStorage. Cette adaptation n'est pas incluse/terminée.
+4. Ajouter authentification, autorisations par utilisateur et validation serveur avant toute donnée réelle. CORS '*' n'est pas une protection.
+5. Déployer le Worker, lier D1, puis tester les routes et l'interface.
+
+IMPORTANT
+- Aucun changement n'a été apporté à votre base D1 distante.
+- Ne déployez pas ce dossier comme une application finale.
+- Ne collez pas de mots de passe, clés secrètes ou identifiants sensibles dans une conversation.

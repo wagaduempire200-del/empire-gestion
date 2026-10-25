@@ -1,0 +1,9 @@
+name = "empire-gestion"
+main = "worker.js"
+compatibility_date = "2026-10-25"
+
+# AVANT DEPLOIEMENT : remplacez DATABASE_ID par l'identifiant réel de votre base D1.
+[[d1_databases]]
+binding = "DB"
+database_name = "empire-gestion-db"
+database_id = "DATABASE_ID_A_REMPLACER"
